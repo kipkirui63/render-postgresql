@@ -57,7 +57,7 @@ class Varietals(db.Model):
 class Wines(db.Model):
     wine_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
-    type_id = db.Column(db.Integer, db.ForeignKey('winetypes.type_id'), nullable=False)
+    type_id = db.Column(db.Integer, db.ForeignKey('wine_types.type_id'), nullable=False)
     region_id = db.Column(db.Integer, db.ForeignKey('regions.region_id'), nullable=False)
     description = db.Column(db.Text)
     varietal_id = db.Column(db.Integer, db.ForeignKey('varietals.varietal_id'))
