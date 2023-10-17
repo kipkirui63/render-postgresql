@@ -30,4 +30,4 @@ sqlalchemy-serializer==1.4.1
 typing-extensions==4.8.0; python_version >= '3.8'
 virtualenv==20.24.5; python_version >= '3.7'
 werkzeug==3.0.0; python_version >= '3.8'
-cors==4.0.0; 
+cors==4.0.0; python_version >= '3.7'
